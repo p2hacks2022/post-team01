@@ -1,0 +1,6 @@
+framework module Pods_TeddyBear2022Tests {
+  umbrella header "Pods-TeddyBear2022Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

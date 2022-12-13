@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B9E30EB06124ED92721C84D /* Pods_TeddyBear2022Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066BBDDE937B36124CA180CB /* Pods_TeddyBear2022Tests.framework */; };
+		8C1F21F429486348002C3008 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C1F21F329486348002C3008 /* Colors.xcassets */; };
+		8C70280229483F9100559F9F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70280129483F9100559F9F /* SignInView.swift */; };
+		8C70280429483FFC00559F9F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70280329483FFC00559F9F /* SignUpView.swift */; };
+		8C7028062948445300559F9F /* MakeCapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7028052948445300559F9F /* MakeCapsuleView.swift */; };
 		8C8CDA8F2947481500C1B30D /* TeddyBear2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8CDA8E2947481500C1B30D /* TeddyBear2022App.swift */; };
-		8C8CDA912947481500C1B30D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8CDA902947481500C1B30D /* ContentView.swift */; };
 		8C8CDA932947481600C1B30D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8CDA922947481600C1B30D /* Assets.xcassets */; };
 		8C8CDA972947481600C1B30D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8CDA962947481600C1B30D /* Preview Assets.xcassets */; };
 		8C8CDAA12947481600C1B30D /* TeddyBear2022Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8CDAA02947481600C1B30D /* TeddyBear2022Tests.swift */; };
 		8C8CDAAB2947481600C1B30D /* TeddyBear2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8CDAAA2947481600C1B30D /* TeddyBear2022UITests.swift */; };
 		8C8CDAAD2947481600C1B30D /* TeddyBear2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8CDAAC2947481600C1B30D /* TeddyBear2022UITestsLaunchTests.swift */; };
+		8C8CDABC29474C0500C1B30D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C8CDABB29474C0500C1B30D /* GoogleService-Info.plist */; };
+		A27B93E419BBCDB4DFEA42B5 /* Pods_TeddyBear2022.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDEA4E4E9F7479A1662B3EB /* Pods_TeddyBear2022.framework */; };
+		EB57FF05DAA36AD256FA8D47 /* Pods_TeddyBear2022_TeddyBear2022UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C61A1AE4866622C4A0D754 /* Pods_TeddyBear2022_TeddyBear2022UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03876C4E47919C556CF0B696 /* Pods-TeddyBear2022-TeddyBear2022UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeddyBear2022-TeddyBear2022UITests.release.xcconfig"; path = "Target Support Files/Pods-TeddyBear2022-TeddyBear2022UITests/Pods-TeddyBear2022-TeddyBear2022UITests.release.xcconfig"; sourceTree = "<group>"; };
+		066BBDDE937B36124CA180CB /* Pods_TeddyBear2022Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeddyBear2022Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C25C64C0C085C0BC321C426 /* Pods-TeddyBear2022.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeddyBear2022.debug.xcconfig"; path = "Target Support Files/Pods-TeddyBear2022/Pods-TeddyBear2022.debug.xcconfig"; sourceTree = "<group>"; };
+		65C61A1AE4866622C4A0D754 /* Pods_TeddyBear2022_TeddyBear2022UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeddyBear2022_TeddyBear2022UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66442AEA44478E1980FD63CB /* Pods-TeddyBear2022.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeddyBear2022.release.xcconfig"; path = "Target Support Files/Pods-TeddyBear2022/Pods-TeddyBear2022.release.xcconfig"; sourceTree = "<group>"; };
+		8C1F21F329486348002C3008 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8C70280129483F9100559F9F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		8C70280329483FFC00559F9F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		8C7028052948445300559F9F /* MakeCapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCapsuleView.swift; sourceTree = "<group>"; };
 		8C8CDA8B2947481500C1B30D /* TeddyBear2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeddyBear2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8CDA8E2947481500C1B30D /* TeddyBear2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeddyBear2022App.swift; sourceTree = "<group>"; };
-		8C8CDA902947481500C1B30D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C8CDA922947481600C1B30D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C8CDA942947481600C1B30D /* TeddyBear2022.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TeddyBear2022.entitlements; sourceTree = "<group>"; };
 		8C8CDA962947481600C1B30D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +60,11 @@
 		8C8CDAA62947481600C1B30D /* TeddyBear2022UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeddyBear2022UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8CDAAA2947481600C1B30D /* TeddyBear2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeddyBear2022UITests.swift; sourceTree = "<group>"; };
 		8C8CDAAC2947481600C1B30D /* TeddyBear2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeddyBear2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C8CDABB29474C0500C1B30D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFDEA4E4E9F7479A1662B3EB /* Pods_TeddyBear2022.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeddyBear2022.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7CAC9149DCFCABD53A9816F /* Pods-TeddyBear2022-TeddyBear2022UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeddyBear2022-TeddyBear2022UITests.debug.xcconfig"; path = "Target Support Files/Pods-TeddyBear2022-TeddyBear2022UITests/Pods-TeddyBear2022-TeddyBear2022UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C88A542BD39B491E31D35438 /* Pods-TeddyBear2022Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeddyBear2022Tests.debug.xcconfig"; path = "Target Support Files/Pods-TeddyBear2022Tests/Pods-TeddyBear2022Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5E3731055A4D3B1AAFDB92D /* Pods-TeddyBear2022Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeddyBear2022Tests.release.xcconfig"; path = "Target Support Files/Pods-TeddyBear2022Tests/Pods-TeddyBear2022Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27B93E419BBCDB4DFEA42B5 /* Pods_TeddyBear2022.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9E30EB06124ED92721C84D /* Pods_TeddyBear2022Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB57FF05DAA36AD256FA8D47 /* Pods_TeddyBear2022_TeddyBear2022UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CD95F69B259DBF2BB786A15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFDEA4E4E9F7479A1662B3EB /* Pods_TeddyBear2022.framework */,
+				65C61A1AE4866622C4A0D754 /* Pods_TeddyBear2022_TeddyBear2022UITests.framework */,
+				066BBDDE937B36124CA180CB /* Pods_TeddyBear2022Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8C8CDA822947481500C1B30D = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +112,8 @@
 				8C8CDA9F2947481600C1B30D /* TeddyBear2022Tests */,
 				8C8CDAA92947481600C1B30D /* TeddyBear2022UITests */,
 				8C8CDA8C2947481500C1B30D /* Products */,
+				F4C882A471C154497A91D428 /* Pods */,
+				0CD95F69B259DBF2BB786A15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,8 +131,12 @@
 			isa = PBXGroup;
 			children = (
 				8C8CDA8E2947481500C1B30D /* TeddyBear2022App.swift */,
-				8C8CDA902947481500C1B30D /* ContentView.swift */,
+				8C7028052948445300559F9F /* MakeCapsuleView.swift */,
+				8C1F21F329486348002C3008 /* Colors.xcassets */,
+				8C70280129483F9100559F9F /* SignInView.swift */,
+				8C70280329483FFC00559F9F /* SignUpView.swift */,
 				8C8CDA922947481600C1B30D /* Assets.xcassets */,
+				8C8CDABB29474C0500C1B30D /* GoogleService-Info.plist */,
 				8C8CDA942947481600C1B30D /* TeddyBear2022.entitlements */,
 				8C8CDA952947481600C1B30D /* Preview Content */,
 			);
@@ -129,6 +168,19 @@
 			path = TeddyBear2022UITests;
 			sourceTree = "<group>";
 		};
+		F4C882A471C154497A91D428 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C25C64C0C085C0BC321C426 /* Pods-TeddyBear2022.debug.xcconfig */,
+				66442AEA44478E1980FD63CB /* Pods-TeddyBear2022.release.xcconfig */,
+				C7CAC9149DCFCABD53A9816F /* Pods-TeddyBear2022-TeddyBear2022UITests.debug.xcconfig */,
+				03876C4E47919C556CF0B696 /* Pods-TeddyBear2022-TeddyBear2022UITests.release.xcconfig */,
+				C88A542BD39B491E31D35438 /* Pods-TeddyBear2022Tests.debug.xcconfig */,
+				E5E3731055A4D3B1AAFDB92D /* Pods-TeddyBear2022Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C8CDAB02947481600C1B30D /* Build configuration list for PBXNativeTarget "TeddyBear2022" */;
 			buildPhases = (
+				72055A4A36F04B679C8B3AAF /* [CP] Check Pods Manifest.lock */,
 				8C8CDA872947481500C1B30D /* Sources */,
 				8C8CDA882947481500C1B30D /* Frameworks */,
 				8C8CDA892947481500C1B30D /* Resources */,
+				3F4F6365434FE512F9BA3B72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C8CDAB32947481600C1B30D /* Build configuration list for PBXNativeTarget "TeddyBear2022Tests" */;
 			buildPhases = (
+				D97B617FC85069E23C4A50BE /* [CP] Check Pods Manifest.lock */,
 				8C8CDA982947481600C1B30D /* Sources */,
 				8C8CDA992947481600C1B30D /* Frameworks */,
 				8C8CDA9A2947481600C1B30D /* Resources */,
@@ -171,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C8CDAB62947481600C1B30D /* Build configuration list for PBXNativeTarget "TeddyBear2022UITests" */;
 			buildPhases = (
+				B0BED3F0167824C269701E8D /* [CP] Check Pods Manifest.lock */,
 				8C8CDAA22947481600C1B30D /* Sources */,
 				8C8CDAA32947481600C1B30D /* Frameworks */,
 				8C8CDAA42947481600C1B30D /* Resources */,
+				BF97A0D9500A2CD2602EF974 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +291,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C8CDA972947481600C1B30D /* Preview Assets.xcassets in Resources */,
+				8C1F21F429486348002C3008 /* Colors.xcassets in Resources */,
 				8C8CDA932947481600C1B30D /* Assets.xcassets in Resources */,
+				8C8CDABC29474C0500C1B30D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +313,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F4F6365434FE512F9BA3B72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeddyBear2022/Pods-TeddyBear2022-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeddyBear2022/Pods-TeddyBear2022-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeddyBear2022/Pods-TeddyBear2022-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72055A4A36F04B679C8B3AAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeddyBear2022-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0BED3F0167824C269701E8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeddyBear2022-TeddyBear2022UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF97A0D9500A2CD2602EF974 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeddyBear2022-TeddyBear2022UITests/Pods-TeddyBear2022-TeddyBear2022UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeddyBear2022-TeddyBear2022UITests/Pods-TeddyBear2022-TeddyBear2022UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeddyBear2022-TeddyBear2022UITests/Pods-TeddyBear2022-TeddyBear2022UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D97B617FC85069E23C4A50BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeddyBear2022Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8C8CDA872947481500C1B30D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C8CDA912947481500C1B30D /* ContentView.swift in Sources */,
+				8C70280429483FFC00559F9F /* SignUpView.swift in Sources */,
+				8C70280229483F9100559F9F /* SignInView.swift in Sources */,
+				8C7028062948445300559F9F /* MakeCapsuleView.swift in Sources */,
 				8C8CDA8F2947481500C1B30D /* TeddyBear2022App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,7 +572,9 @@
 		};
 		8C8CDAB12947481600C1B30D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C25C64C0C085C0BC321C426 /* Pods-TeddyBear2022.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TeddyBear2022/TeddyBear2022.entitlements;
@@ -429,8 +595,8 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
@@ -446,7 +612,9 @@
 		};
 		8C8CDAB22947481600C1B30D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66442AEA44478E1980FD63CB /* Pods-TeddyBear2022.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TeddyBear2022/TeddyBear2022.entitlements;
@@ -467,8 +635,8 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
@@ -484,6 +652,7 @@
 		};
 		8C8CDAB42947481600C1B30D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C88A542BD39B491E31D35438 /* Pods-TeddyBear2022Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +676,7 @@
 		};
 		8C8CDAB52947481600C1B30D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E3731055A4D3B1AAFDB92D /* Pods-TeddyBear2022Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,8 +700,9 @@
 		};
 		8C8CDAB72947481600C1B30D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7CAC9149DCFCABD53A9816F /* Pods-TeddyBear2022-TeddyBear2022UITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 777P2JPN23;
@@ -552,8 +723,9 @@
 		};
 		8C8CDAB82947481600C1B30D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03876C4E47919C556CF0B696 /* Pods-TeddyBear2022-TeddyBear2022UITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 777P2JPN23;

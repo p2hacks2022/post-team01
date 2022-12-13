@@ -6,12 +6,30 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct TeddyBear2022App: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MakeCapsuleView() //最初に表示したい画面
         }
+    }
+}
+
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+
+        // この間に AppDelegate.swift の処理を書く
+        FirebaseApp.configure()
+
+        return true
+    }
+}
+
+struct TestApp_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }
