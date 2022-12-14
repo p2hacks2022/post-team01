@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftuiphpicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tyagishi/SwiftUIPHPicker.git",
+      "state" : {
+        "revision" : "adf008fdab6fb1d398e13b3ed178188ec9d0f2e5",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

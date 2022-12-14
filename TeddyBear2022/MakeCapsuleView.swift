@@ -10,6 +10,7 @@ import FirebaseAuth
 import FirebaseFirestore
 
 struct MakeCapsuleView: View {
+    @State private var isShowingView: Bool = false // 画面遷移用
     
     var body: some View {
         
@@ -33,7 +34,7 @@ struct MakeCapsuleView: View {
                     })
                     Spacer()
                 }
-                Text("中身を選ぼう")
+                Text("思い出を詰めよう")
                     .fontWeight(.bold)
                     .foregroundColor(.gray)
             }
@@ -41,7 +42,7 @@ struct MakeCapsuleView: View {
             // ボタン1段目
             HStack(spacing: 50){
                 // 写真ボタン（写真セレクト画面へ）
-                Button(action: {}, label: {
+                Button(action: {isShowingView.toggle()}, label: {
                     Image(systemName: "camera.fill")
                         .resizable()
                         .scaledToFit()
@@ -55,6 +56,9 @@ struct MakeCapsuleView: View {
                         .shadow(color: Color.white, radius: 5, x: -5, y: -5)
                     
                 })
+                .sheet(isPresented: $isShowingView) {
+                    ImageView()
+                }
                 // 動画ボタン（動画セレクト画面へ）
                 Button(action: {}, label: {
                     Image(systemName: "video.fill")
@@ -143,10 +147,10 @@ struct MakeCapsuleView: View {
             
             Button(action: {}, label: {
                 Text("いれる")
-                    .frame(height: 10.0)
+                    .frame(width: 200)
                     .font(.system(size: 20, weight: .bold))
                     .foregroundColor(.gray)
-                    .padding(.all, 50)
+                    .padding(.all, 25)
                     .background(Color("Color"))
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .shadow(color: Color("Color1").opacity(0.6), radius: 5, x: 5, y: 5)

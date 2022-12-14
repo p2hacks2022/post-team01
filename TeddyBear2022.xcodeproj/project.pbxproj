@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4B9E30EB06124ED92721C84D /* Pods_TeddyBear2022Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066BBDDE937B36124CA180CB /* Pods_TeddyBear2022Tests.framework */; };
 		8C1F21F429486348002C3008 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C1F21F329486348002C3008 /* Colors.xcassets */; };
+		8C25171F29499E6700C5052E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25171E29499E6700C5052E /* ImageView.swift */; };
+		8C2517282949E16F00C5052E /* SwiftUIPHPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2517272949E16F00C5052E /* SwiftUIPHPicker */; };
 		8C70280229483F9100559F9F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70280129483F9100559F9F /* SignInView.swift */; };
 		8C70280429483FFC00559F9F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70280329483FFC00559F9F /* SignUpView.swift */; };
 		8C7028062948445300559F9F /* MakeCapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7028052948445300559F9F /* MakeCapsuleView.swift */; };
@@ -47,6 +49,7 @@
 		65C61A1AE4866622C4A0D754 /* Pods_TeddyBear2022_TeddyBear2022UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeddyBear2022_TeddyBear2022UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66442AEA44478E1980FD63CB /* Pods-TeddyBear2022.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeddyBear2022.release.xcconfig"; path = "Target Support Files/Pods-TeddyBear2022/Pods-TeddyBear2022.release.xcconfig"; sourceTree = "<group>"; };
 		8C1F21F329486348002C3008 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8C25171E29499E6700C5052E /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		8C70280129483F9100559F9F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		8C70280329483FFC00559F9F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		8C7028052948445300559F9F /* MakeCapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCapsuleView.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2517282949E16F00C5052E /* SwiftUIPHPicker in Frameworks */,
 				A27B93E419BBCDB4DFEA42B5 /* Pods_TeddyBear2022.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +136,7 @@
 			children = (
 				8C8CDA8E2947481500C1B30D /* TeddyBear2022App.swift */,
 				8C7028052948445300559F9F /* MakeCapsuleView.swift */,
+				8C25171E29499E6700C5052E /* ImageView.swift */,
 				8C1F21F329486348002C3008 /* Colors.xcassets */,
 				8C70280129483F9100559F9F /* SignInView.swift */,
 				8C70280329483FFC00559F9F /* SignUpView.swift */,
@@ -199,6 +204,9 @@
 			dependencies = (
 			);
 			name = TeddyBear2022;
+			packageProductDependencies = (
+				8C2517272949E16F00C5052E /* SwiftUIPHPicker */,
+			);
 			productName = TeddyBear2022;
 			productReference = 8C8CDA8B2947481500C1B30D /* TeddyBear2022.app */;
 			productType = "com.apple.product-type.application";
@@ -274,6 +282,9 @@
 				Base,
 			);
 			mainGroup = 8C8CDA822947481500C1B30D;
+			packageReferences = (
+				8C2517262949E16F00C5052E /* XCRemoteSwiftPackageReference "SwiftUIPHPicker" */,
+			);
 			productRefGroup = 8C8CDA8C2947481500C1B30D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -421,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C25171F29499E6700C5052E /* ImageView.swift in Sources */,
 				8C70280429483FFC00559F9F /* SignUpView.swift in Sources */,
 				8C70280229483F9100559F9F /* SignInView.swift in Sources */,
 				8C7028062948445300559F9F /* MakeCapsuleView.swift in Sources */,
@@ -595,7 +607,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
@@ -635,7 +647,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
@@ -784,6 +796,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C2517262949E16F00C5052E /* XCRemoteSwiftPackageReference "SwiftUIPHPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tyagishi/SwiftUIPHPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C2517272949E16F00C5052E /* SwiftUIPHPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C2517262949E16F00C5052E /* XCRemoteSwiftPackageReference "SwiftUIPHPicker" */;
+			productName = SwiftUIPHPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C8CDA832947481500C1B30D /* Project object */;
 }
