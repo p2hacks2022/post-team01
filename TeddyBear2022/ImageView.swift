@@ -12,7 +12,7 @@ import os
 import SwiftUIPHPicker
 
 struct ImageView: View {
-    @State var images: [UIImage] = []
+    @State var images: [UIImage] = [] // 写真を入れる配列
     @State private var showPHPicker:Bool = false
     @Environment(\.dismiss) var dismiss
     
@@ -82,7 +82,7 @@ struct ImageView: View {
                             .padding(.all, 5)
                             .background(Color("Color").opacity(0.6))
                             .clipShape(Circle())
-                            .shadow(color: Color.black.opacity(0.3), radius: 5, x: 5, y: 5)
+                            .shadow(color: Color("Color1").opacity(0.3), radius: 5, x: 5, y: 5)
                             .shadow(color: Color.white, radius: 5, x: -5, y: -5)
                     }
                 }

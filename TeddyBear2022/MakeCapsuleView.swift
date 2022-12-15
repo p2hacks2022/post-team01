@@ -10,7 +10,9 @@ import FirebaseAuth
 import FirebaseFirestore
 
 struct MakeCapsuleView: View {
-    @State private var isShowingView: Bool = false // 画面遷移用
+    @State private var isShowingIView: Bool = false // 画面遷移用
+    @State private var isShowingVView: Bool = false
+    @State private var isShowingTView: Bool = false
     
     var body: some View {
         
@@ -36,19 +38,19 @@ struct MakeCapsuleView: View {
                 }
                 Text("思い出を詰めよう")
                     .fontWeight(.bold)
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color("Color2"))
             }
             
             // ボタン1段目
             HStack(spacing: 50){
                 // 写真ボタン（写真セレクト画面へ）
-                Button(action: {isShowingView.toggle()}, label: {
+                Button(action: {isShowingIView.toggle()}, label: {
                     Image(systemName: "camera.fill")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 40.0, height: 40.0)
                         .font(.system(size: 50, weight: .bold))
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color("Color2"))
                         .padding(.all, 30)
                         .background(Color("Color"))
                         .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -56,17 +58,17 @@ struct MakeCapsuleView: View {
                         .shadow(color: Color.white, radius: 5, x: -5, y: -5)
                     
                 })
-                .sheet(isPresented: $isShowingView) {
+                .sheet(isPresented: $isShowingIView) {
                     ImageView()
                 }
                 // 動画ボタン（動画セレクト画面へ）
-                Button(action: {}, label: {
+                Button(action: {isShowingVView.toggle()}, label: {
                     Image(systemName: "video.fill")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 40.0, height: 40.0)
                         .font(.system(size: 50, weight: .bold))
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color("Color2"))
                         .padding(.all, 30)
                         .background(Color("Color"))
                         .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -74,6 +76,9 @@ struct MakeCapsuleView: View {
                         .shadow(color: Color.white, radius: 5, x: -5, y: -5)
                     
                 })
+                .sheet(isPresented: $isShowingVView) {
+                    VideoView()
+                }
             }
             
             // ボタン2段目
@@ -85,7 +90,7 @@ struct MakeCapsuleView: View {
                         .scaledToFit()
                         .frame(width: 40.0, height: 40.0)
                         .font(.system(size: 50, weight: .bold))
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color("Color2"))
                         .padding(.all, 30)
                         .background(Color("Color"))
                         .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -100,7 +105,7 @@ struct MakeCapsuleView: View {
                         .scaledToFit()
                         .frame(width: 40.0, height: 40.0)
                         .font(.system(size: 50, weight: .bold))
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color("Color2"))
                         .padding(.all, 30)
                         .background(Color("Color"))
                         .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -113,13 +118,13 @@ struct MakeCapsuleView: View {
             // ボタン3段目
             HStack(spacing: 50){
                 // テキストボタン（テキスト入力画面へ）
-                Button(action: {}, label: {
+                Button(action: {isShowingTView.toggle()}, label: {
                     Image(systemName: "envelope")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 40.0, height: 40.0)
                         .font(.system(size: 50, weight: .bold))
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color("Color2"))
                         .padding(.all, 30)
                         .background(Color("Color"))
                         .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -127,6 +132,9 @@ struct MakeCapsuleView: View {
                         .shadow(color: Color.white, radius: 5, x: -5, y: -5)
                     
                 })
+                .sheet(isPresented: $isShowingTView) {
+                    LetterView()
+                }
                 // 連絡先ボタン（連絡先セレクト画面へ）
                 Button(action: {}, label: {
                     Image(systemName: "doc.fill")
@@ -134,7 +142,7 @@ struct MakeCapsuleView: View {
                         .scaledToFit()
                         .frame(width: 40.0, height: 40.0)
                         .font(.system(size: 50, weight: .bold))
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color("Color2"))
                         .padding(.all, 30)
                         .background(Color("Color"))
                         .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -149,7 +157,7 @@ struct MakeCapsuleView: View {
                 Text("いれる")
                     .frame(width: 200)
                     .font(.system(size: 20, weight: .bold))
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color("Color2"))
                     .padding(.all, 25)
                     .background(Color("Color"))
                     .clipShape(RoundedRectangle(cornerRadius: 20))

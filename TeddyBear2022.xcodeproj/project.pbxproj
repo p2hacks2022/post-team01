@@ -11,6 +11,7 @@
 		8C1F21F429486348002C3008 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C1F21F329486348002C3008 /* Colors.xcassets */; };
 		8C25171F29499E6700C5052E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25171E29499E6700C5052E /* ImageView.swift */; };
 		8C2517282949E16F00C5052E /* SwiftUIPHPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2517272949E16F00C5052E /* SwiftUIPHPicker */; };
+		8C3B27BF294AE1180088812B /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B27BE294AE1180088812B /* VideoView.swift */; };
 		8C70280229483F9100559F9F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70280129483F9100559F9F /* SignInView.swift */; };
 		8C70280429483FFC00559F9F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70280329483FFC00559F9F /* SignUpView.swift */; };
 		8C7028062948445300559F9F /* MakeCapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7028052948445300559F9F /* MakeCapsuleView.swift */; };
@@ -21,6 +22,9 @@
 		8C8CDAAB2947481600C1B30D /* TeddyBear2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8CDAAA2947481600C1B30D /* TeddyBear2022UITests.swift */; };
 		8C8CDAAD2947481600C1B30D /* TeddyBear2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8CDAAC2947481600C1B30D /* TeddyBear2022UITestsLaunchTests.swift */; };
 		8C8CDABC29474C0500C1B30D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C8CDABB29474C0500C1B30D /* GoogleService-Info.plist */; };
+		8CB31172294B0546003E97C1 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB31171294B0546003E97C1 /* VideoPicker.swift */; };
+		8CB31176294B1939003E97C1 /* AVAsset+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB31175294B1939003E97C1 /* AVAsset+.swift */; };
+		8CB31178294B2C12003E97C1 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB31177294B2C12003E97C1 /* LetterView.swift */; };
 		A27B93E419BBCDB4DFEA42B5 /* Pods_TeddyBear2022.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDEA4E4E9F7479A1662B3EB /* Pods_TeddyBear2022.framework */; };
 		EB57FF05DAA36AD256FA8D47 /* Pods_TeddyBear2022_TeddyBear2022UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C61A1AE4866622C4A0D754 /* Pods_TeddyBear2022_TeddyBear2022UITests.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +54,7 @@
 		66442AEA44478E1980FD63CB /* Pods-TeddyBear2022.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeddyBear2022.release.xcconfig"; path = "Target Support Files/Pods-TeddyBear2022/Pods-TeddyBear2022.release.xcconfig"; sourceTree = "<group>"; };
 		8C1F21F329486348002C3008 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8C25171E29499E6700C5052E /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		8C3B27BE294AE1180088812B /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8C70280129483F9100559F9F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		8C70280329483FFC00559F9F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		8C7028052948445300559F9F /* MakeCapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCapsuleView.swift; sourceTree = "<group>"; };
@@ -64,6 +69,9 @@
 		8C8CDAAA2947481600C1B30D /* TeddyBear2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeddyBear2022UITests.swift; sourceTree = "<group>"; };
 		8C8CDAAC2947481600C1B30D /* TeddyBear2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeddyBear2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8C8CDABB29474C0500C1B30D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8CB31171294B0546003E97C1 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
+		8CB31175294B1939003E97C1 /* AVAsset+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAsset+.swift"; sourceTree = "<group>"; };
+		8CB31177294B2C12003E97C1 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
 		AFDEA4E4E9F7479A1662B3EB /* Pods_TeddyBear2022.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeddyBear2022.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CAC9149DCFCABD53A9816F /* Pods-TeddyBear2022-TeddyBear2022UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeddyBear2022-TeddyBear2022UITests.debug.xcconfig"; path = "Target Support Files/Pods-TeddyBear2022-TeddyBear2022UITests/Pods-TeddyBear2022-TeddyBear2022UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C88A542BD39B491E31D35438 /* Pods-TeddyBear2022Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeddyBear2022Tests.debug.xcconfig"; path = "Target Support Files/Pods-TeddyBear2022Tests/Pods-TeddyBear2022Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +145,10 @@
 				8C8CDA8E2947481500C1B30D /* TeddyBear2022App.swift */,
 				8C7028052948445300559F9F /* MakeCapsuleView.swift */,
 				8C25171E29499E6700C5052E /* ImageView.swift */,
+				8CB31177294B2C12003E97C1 /* LetterView.swift */,
+				8C3B27BE294AE1180088812B /* VideoView.swift */,
+				8CB31175294B1939003E97C1 /* AVAsset+.swift */,
+				8CB31171294B0546003E97C1 /* VideoPicker.swift */,
 				8C1F21F329486348002C3008 /* Colors.xcassets */,
 				8C70280129483F9100559F9F /* SignInView.swift */,
 				8C70280329483FFC00559F9F /* SignUpView.swift */,
@@ -432,9 +444,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3B27BF294AE1180088812B /* VideoView.swift in Sources */,
+				8CB31178294B2C12003E97C1 /* LetterView.swift in Sources */,
 				8C25171F29499E6700C5052E /* ImageView.swift in Sources */,
 				8C70280429483FFC00559F9F /* SignUpView.swift in Sources */,
+				8CB31176294B1939003E97C1 /* AVAsset+.swift in Sources */,
 				8C70280229483F9100559F9F /* SignInView.swift in Sources */,
+				8CB31172294B0546003E97C1 /* VideoPicker.swift in Sources */,
 				8C7028062948445300559F9F /* MakeCapsuleView.swift in Sources */,
 				8C8CDA8F2947481500C1B30D /* TeddyBear2022App.swift in Sources */,
 			);
