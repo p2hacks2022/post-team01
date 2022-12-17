@@ -1,0 +1,90 @@
+@charset "UTF-8";
+body {margin: 0;
+    font-family: 'Source Sans Pro', 'メイリオ',
+    'Hiragino Kaku Gothic Pro', sans-serif}
+
+/* サイト名 */
+.site {
+    background-color: #474145;
+    
+    padding: 10px;
+    text-align: center;
+}
+.site a {
+    color: #c779a6;
+    font-size: 30px;
+    font-family: 'Paytone One', sans-serif;
+    text-decoration: none
+}
+
+/* ナビゲーションメニュー */
+.menu {
+    padding: 10px 0;
+    background-color: #f0f0e9;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ae7495;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.menu li a:hover {
+    background-color: #a50c63;
+}
+
+/* 記事 */
+.article {
+    padding: 40px;
+}
+.article img {
+    max-width: 100%;
+    height: auto;
+} 
+.article h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.article h1 span {
+    display: block;
+    margin-bottom: 20px;
+    color: #a50c63;
+    font-size: 20px;
+    font-weight: bold;
+}
+.article p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 2;
+    text-align: justify;
+}
+.articleinfo {
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+/* 関連サイトメニュー */
+.relate ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.relate li a {
+    display: block;
+    padding: 5px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+}
+.relate li a:hover {
+    background-color: #eeeeee;
+}
