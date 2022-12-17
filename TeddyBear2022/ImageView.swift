@@ -10,16 +10,23 @@ import SwiftUI
 import PhotosUI
 import os
 import SwiftUIPHPicker
+import Firebase
+
+//FirebaseApp.configure()
+//let db = Firestore.firestore()
 
 struct ImageView: View {
     @State var images: [UIImage] = [] // 写真を入れる配列
     @State private var showPHPicker:Bool = false
     @Environment(\.dismiss) var dismiss
+    @State var uidText = "ID"
+    @State var testInputText = ""
+    @State var fetchText = ""
     
     static var config: PHPickerConfiguration {
         var config = PHPickerConfiguration()
         config.filter = .images
-        config.selectionLimit = 0
+        config.selectionLimit = 3 // 選べる枚数
         return config
     }
     let logger = Logger(subsystem: "com.smalldesksoftware.PHPickerSample", category: "PHPickerSample")
@@ -70,30 +77,56 @@ struct ImageView: View {
             .padding()
             Divider()
             
-            // 選択された写真一覧
-            ScrollView{
-                LazyVGrid(columns: columns) {
-                    ForEach(images, id: \.self) { image in
-                        Image(uiImage: image)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 95, height: 95)
-                            .clipShape(Circle())
-                            .padding(.all, 5)
-                            .background(Color("Color").opacity(0.6))
-                            .clipShape(Circle())
-                            .shadow(color: Color("Color1").opacity(0.3), radius: 5, x: 5, y: 5)
-                            .shadow(color: Color.white, radius: 5, x: -5, y: -5)
-                    }
-                }
-            }
+
+//            Button {
+//                guard let uid = Auth.auth().currentUser?.uid else {
+//                    return uidText = "ログインしてない"
+//                }
+//                uidText = uid
+//            } label: {
+//                Text("test button")
+//            }
+//
+//            Text(uidText)
+//
+//            TextField(text: $testInputText) {
+//                Text("input Text")
+//            }
+//            .frame(width: UIScreen.main.bounds.width * 0.95)
+//            Button {
+//                Firestore.firestore().collection("users").document(uidText).setData(["testText": testInputText])
+//            } label: {
+//                Text("Save")
+//            }
+            
+//            // 選択された写真一覧
+//            ScrollView{
+//                LazyVGrid(columns: columns) {
+//                    ForEach(images, id: \.self) { image in
+//                        Image(uiImage: image)
+//                            .resizable()
+//                            .scaledToFill()
+//                            .frame(width: 95, height: 95)
+//                            .clipShape(Circle())
+//                            .padding(.all, 5)
+//                            .background(Color("Color").opacity(0.6))
+//                            .clipShape(Circle())
+//                            .shadow(color: Color("Color1").opacity(0.3), radius: 5, x: 5, y: 5)
+//                            .shadow(color: Color.white, radius: 5, x: -5, y: -5)
+//                    }
+//                }
+//            }
             Divider()
-            //.padding()
             Spacer()
             Spacer()
             
             // 決定ボタン（カプセル画面へ）
-            Button(action: {dismiss()}, label: {
+            Button(action: {
+//                Firestore.firestore().collection("users").document(uidText).setData(["image1": images[0]])
+//                Firestore.firestore().collection("users").document(uidText).setData(["image2": images[1]])
+//                Firestore.firestore().collection("users").document(uidText).setData(["image3": images[2]])
+                dismiss()
+            }, label: {
                 Text("決定")
                     .frame(width: 200)
                     .font(.system(size: 20, weight: .bold))

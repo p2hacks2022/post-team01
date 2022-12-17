@@ -13,7 +13,7 @@ struct TeddyBear2022App: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            MakeCapsuleView() //最初に表示したい画面
+            MainView() //最初に表示したい画面
         }
     }
 }
@@ -25,11 +25,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
 
         return true
-    }
-}
-
-struct TestApp_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }

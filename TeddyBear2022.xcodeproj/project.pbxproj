@@ -12,6 +12,11 @@
 		8C25171F29499E6700C5052E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25171E29499E6700C5052E /* ImageView.swift */; };
 		8C2517282949E16F00C5052E /* SwiftUIPHPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2517272949E16F00C5052E /* SwiftUIPHPicker */; };
 		8C3B27BF294AE1180088812B /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B27BE294AE1180088812B /* VideoView.swift */; };
+		8C40DB7C294C7BBF0001EF38 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40DB7B294C7BBF0001EF38 /* MainView.swift */; };
+		8C40DB7E294C93F40001EF38 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40DB7D294C93F40001EF38 /* HomeView.swift */; };
+		8C40DB80294DB2080001EF38 /* GetCapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40DB7F294DB2080001EF38 /* GetCapsuleView.swift */; };
+		8C40DB82294DF0980001EF38 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40DB81294DF0980001EF38 /* DatePickerView.swift */; };
+		8C40DB84294E16880001EF38 /* CompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40DB83294E16880001EF38 /* CompleteView.swift */; };
 		8C70280229483F9100559F9F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70280129483F9100559F9F /* SignInView.swift */; };
 		8C70280429483FFC00559F9F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70280329483FFC00559F9F /* SignUpView.swift */; };
 		8C7028062948445300559F9F /* MakeCapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7028052948445300559F9F /* MakeCapsuleView.swift */; };
@@ -55,6 +60,11 @@
 		8C1F21F329486348002C3008 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8C25171E29499E6700C5052E /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		8C3B27BE294AE1180088812B /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		8C40DB7B294C7BBF0001EF38 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8C40DB7D294C93F40001EF38 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8C40DB7F294DB2080001EF38 /* GetCapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCapsuleView.swift; sourceTree = "<group>"; };
+		8C40DB81294DF0980001EF38 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		8C40DB83294E16880001EF38 /* CompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteView.swift; sourceTree = "<group>"; };
 		8C70280129483F9100559F9F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		8C70280329483FFC00559F9F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		8C7028052948445300559F9F /* MakeCapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCapsuleView.swift; sourceTree = "<group>"; };
@@ -144,6 +154,9 @@
 			children = (
 				8C8CDA8E2947481500C1B30D /* TeddyBear2022App.swift */,
 				8C7028052948445300559F9F /* MakeCapsuleView.swift */,
+				8C40DB81294DF0980001EF38 /* DatePickerView.swift */,
+				8C40DB83294E16880001EF38 /* CompleteView.swift */,
+				8C40DB7F294DB2080001EF38 /* GetCapsuleView.swift */,
 				8C25171E29499E6700C5052E /* ImageView.swift */,
 				8CB31177294B2C12003E97C1 /* LetterView.swift */,
 				8C3B27BE294AE1180088812B /* VideoView.swift */,
@@ -152,6 +165,8 @@
 				8C1F21F329486348002C3008 /* Colors.xcassets */,
 				8C70280129483F9100559F9F /* SignInView.swift */,
 				8C70280329483FFC00559F9F /* SignUpView.swift */,
+				8C40DB7B294C7BBF0001EF38 /* MainView.swift */,
+				8C40DB7D294C93F40001EF38 /* HomeView.swift */,
 				8C8CDA922947481600C1B30D /* Assets.xcassets */,
 				8C8CDABB29474C0500C1B30D /* GoogleService-Info.plist */,
 				8C8CDA942947481600C1B30D /* TeddyBear2022.entitlements */,
@@ -445,11 +460,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C3B27BF294AE1180088812B /* VideoView.swift in Sources */,
+				8C40DB84294E16880001EF38 /* CompleteView.swift in Sources */,
 				8CB31178294B2C12003E97C1 /* LetterView.swift in Sources */,
 				8C25171F29499E6700C5052E /* ImageView.swift in Sources */,
+				8C40DB80294DB2080001EF38 /* GetCapsuleView.swift in Sources */,
+				8C40DB7C294C7BBF0001EF38 /* MainView.swift in Sources */,
 				8C70280429483FFC00559F9F /* SignUpView.swift in Sources */,
+				8C40DB7E294C93F40001EF38 /* HomeView.swift in Sources */,
 				8CB31176294B1939003E97C1 /* AVAsset+.swift in Sources */,
 				8C70280229483F9100559F9F /* SignInView.swift in Sources */,
+				8C40DB82294DF0980001EF38 /* DatePickerView.swift in Sources */,
 				8CB31172294B0546003E97C1 /* VideoPicker.swift in Sources */,
 				8C7028062948445300559F9F /* MakeCapsuleView.swift in Sources */,
 				8C8CDA8F2947481500C1B30D /* TeddyBear2022App.swift in Sources */,

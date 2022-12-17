@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>731830605772-pnnp2chs2093tn4j1m6mfuheoppej3ro.apps.googleusercontent.com</string>
+	<string>731830605772-77ifst9n0qus5ogc2jrml4tfovksr5ou.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.731830605772-pnnp2chs2093tn4j1m6mfuheoppej3ro</string>
+	<string>com.googleusercontent.apps.731830605772-77ifst9n0qus5ogc2jrml4tfovksr5ou</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAj6K4SvzQQrkwALcITRX2PKwhvvyt6OdI</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.teddybear2022</string>
+	<string>com.example.TeddyBear2022</string>
 	<key>PROJECT_ID</key>
 	<string>teddybear2022-59405</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:731830605772:ios:dd63976c13de4121d02f69</string>
+	<string>1:731830605772:ios:0a95c3a21958c202d02f69</string>
 </dict>
 </plist>
