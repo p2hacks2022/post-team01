@@ -18,12 +18,7 @@ struct GetCapsuleView: View {
     @State private var futureData = "" // future
     
     @Environment(\.dismiss) var dismiss
-    
-    init() {
-        
-        UITableView.appearance().backgroundColor = .clear
-    }
-    
+
     var body: some View {
         
         NavigationView {
@@ -57,6 +52,7 @@ struct GetCapsuleView: View {
                             }
                             uidText = uid
                             
+                            // FIrestoreからデータ取得
                             let db = Firestore.firestore()
                             let docRef = db.collection(uidText).document("1")
                             
@@ -64,9 +60,10 @@ struct GetCapsuleView: View {
                                 if let document = document, document.exists {
                                     
                                     if let docDict = document.data(),
+                                       
                                        let letter = docDict["letter"] as? String,
                                        let timestamp: Timestamp = docDict["date"] as? Timestamp,
-                                       let date: Date? = timestamp.dateValue(){
+                                       let date: Date? = timestamp.dateValue() {
                                         // 日付の調整
                                         let dateFormatter = DateFormatter()
                                         dateFormatter.locale = Locale(identifier: "ja_JP")
@@ -75,6 +72,7 @@ struct GetCapsuleView: View {
                                         dateFormatter.dateFormat = "yyyy年 M月dd日 H時mm分"
                                         letterData = "letter: \(letter)"
                                         dateData = "\(dateFormatter.string(from: date!))"
+                                        
                                     } else {
                                         dateData = "cannot retrieve data"
                                     }
@@ -102,14 +100,13 @@ struct GetCapsuleView: View {
                 }
                 Spacer()
                 
+                // 取得したデータの表示
                 List{
                     Text("\(dateData)\n\(letterData)")
                         .fontWeight(.bold)
                         .font(.system(size: 16))
                         .foregroundColor(Color("Color2"))
-//                        .multilineTextAlignment(.trailing)
                 }
-                
                 Spacer()
             }
             .padding(.all)

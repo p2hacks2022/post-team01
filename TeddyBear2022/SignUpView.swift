@@ -4,6 +4,7 @@
 //
 //  Created by 姜南圭 on 2022/12/13.
 //
+//  新規登録画面
 
 import SwiftUI
 import FirebaseAuth
@@ -53,7 +54,7 @@ struct SignUpView: View {
                     
                     Color("Color").edgesIgnoringSafeArea(.all)
                     
-                    
+                    // 入力ボックス
                     HStack {
                         Spacer().frame(width: 50)
                         VStack {
@@ -152,10 +153,4 @@ struct SignUpView: View {
             }
         }
     }
-    
-    //    struct SignUpView_Previews: PreviewProvider {
-    //        static var previews: some View {
-    //            SignUpView()
-    //        }
-    //    }
 }

@@ -4,7 +4,7 @@
 //  
 //  Created by テディベア on 2022/12/18
 //  
-//
+//  カプセル完成後の画面
 
 import SwiftUI
 import FirebaseAuth
@@ -14,7 +14,7 @@ struct CompleteView: View {
     @State private var isShowingHView: Bool = false // ホーム画面遷移
     @State private var emailText: String = "" // email情報取得
     
-    var cloud: UIImage = UIImage(imageLiteralResourceName: "cloud") // ロゴ
+    var kumo: UIImage = UIImage(imageLiteralResourceName: "kumo") // 雲画像
     
     @Environment(\.dismiss) var dismiss
     
@@ -23,12 +23,14 @@ struct CompleteView: View {
         NavigationView {
             
             ZStack{
-                
-                // ロゴ
-                Image(uiImage: cloud)
+                // 雲
+                Image(uiImage: kumo)
                     .resizable()
                     .scaledToFill()
-//                    .frame(width: 270, height: 270)
+                    .frame(width: 270, height: 270)
+                // ニューモーフィズムエフェクト
+                    .shadow(color: Color("Color1").opacity(0.6), radius: 5, x: 5, y: 5)
+                    .shadow(color: Color.white, radius: 5, x: -5, y: -5)
                 
                 VStack(){
                     
@@ -55,9 +57,24 @@ struct CompleteView: View {
                         Spacer()
                     }
                     
+                    // ミニ雲
+                    Image(uiImage: kumo)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 80, height: 80)
+                        .padding(.top, 40)
+                        .padding(.leading, 150)
+                    // ニューモーフィズムエフェクト
+                        .shadow(color: Color("Color1").opacity(0.6), radius: 5, x: 5, y: 5)
+                        .shadow(color: Color.white, radius: 5, x: -5, y: -5)
+                    
+                    Spacer()
+                    
                     Text("コンプリート！")
                         .fontWeight(.bold)
-                        .foregroundColor(Color("Color2"))
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(Color("Color1"))
+                        .padding(.bottom, 100)
                     
                     Spacer()
                     
@@ -80,8 +97,6 @@ struct CompleteView: View {
                             .shadow(color: Color.white, radius: 5, x: -5, y: -5)
                     })
                 }
-//                .padding(.all)
-//                .background(Color("Color").edgesIgnoringSafeArea(.all))
             }
             .padding(.all)
             .background(Color("Color").edgesIgnoringSafeArea(.all))

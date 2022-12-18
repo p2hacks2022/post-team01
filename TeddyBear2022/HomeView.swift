@@ -4,7 +4,7 @@
 //  
 //  Created by テディベア on 2022/12/16
 //  
-//
+//  ホーム画面
 
 import SwiftUI
 import FirebaseAuth
@@ -104,7 +104,6 @@ struct HomeView: View {
                     })
                 }
                 Spacer()
-//                Spacer()
             }
             .padding(.all)
             .background(Color("Color").edgesIgnoringSafeArea(.all))
@@ -112,9 +111,3 @@ struct HomeView: View {
         .navigationBarBackButtonHidden(true) // 戻るボタン削除
     }
 }
-//struct HomeView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        HomeView()
-//    }
-//}
-

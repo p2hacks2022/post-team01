@@ -20,6 +20,7 @@ struct DatePickerView: View {
     @Environment(\.dismiss) var dismiss
     
     init() {
+        // カレンダーの色変更
         UIDatePicker.appearance().tintColor = .systemPink
     }
     
@@ -32,7 +33,6 @@ struct DatePickerView: View {
             }
             
             ZStack{
-                //                Color("Color").edgesIgnoringSafeArea(.all)
                 
                 // メニュー
                 HStack{
@@ -58,12 +58,14 @@ struct DatePickerView: View {
             }
             .padding(.bottom, 50)
             
+            // カレンダー
             DatePicker("Select Date", selection: $date)
                 .datePickerStyle(GraphicalDatePickerStyle())
             
+            // 楽に日時を決められるボタン
             HStack(spacing: 20){
                 
-                // 1年後ボタン
+                // 今の日時から1年後ボタン
                 Button(action: {
                     date = Date().addingTimeInterval(60 * 60 * 24 * 365)
                 }, label: {
@@ -110,13 +112,13 @@ struct DatePickerView: View {
             }
             Spacer()
             
-            // データベースへ追加ボタン（日付画面遷移）
+            // データベースへ日時追加ボタン（日付画面遷移）
             Button(action: {
                 guard let uid = Auth.auth().currentUser?.uid else {
                     return uidText = "ログインしてない"
                 }
                 uidText = uid
-                // 日付データ
+                // 日時データ
                 Firestore.firestore().collection(uidText).document("1").updateData([
                     "date": Timestamp(date: Date()),
                     "future": Timestamp(date: date)

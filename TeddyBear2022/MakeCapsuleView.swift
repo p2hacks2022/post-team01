@@ -174,13 +174,13 @@ struct MakeCapsuleView: View {
                 }
                 Spacer()
                 
-                // データベースへ追加ボタン（日付画面遷移）
+                // データベースへ中身追加ボタン（日付画面遷移）
                 Button(action: {
                     guard let uid = Auth.auth().currentUser?.uid else {
                         return uidText = "ログインしてない"
                     }
                     uidText = uid
-                    // IDごとにカプセル追加（if文でカプセルの名前作れば良い？）
+                    // IDごとにカプセル追加（if文でカプセルの名前作れば良い？）未実装
                     // お手紙
                     Firestore.firestore().collection(uidText).document("1").setData(["letter": editText])
                     isShowingDView.toggle()

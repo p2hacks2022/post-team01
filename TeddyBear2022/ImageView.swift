@@ -19,6 +19,7 @@ struct ImageView: View {
     @State var images: [UIImage] = [] // 写真を入れる配列
     @State private var showPHPicker:Bool = false
     @Environment(\.dismiss) var dismiss
+    
     @State var uidText = "ID"
     @State var testInputText = ""
     @State var fetchText = ""
@@ -26,7 +27,7 @@ struct ImageView: View {
     static var config: PHPickerConfiguration {
         var config = PHPickerConfiguration()
         config.filter = .images
-        config.selectionLimit = 3 // 選べる枚数
+        config.selectionLimit = 0 // 選べる枚数、無制限
         return config
     }
     let logger = Logger(subsystem: "com.smalldesksoftware.PHPickerSample", category: "PHPickerSample")
@@ -77,28 +78,6 @@ struct ImageView: View {
             .padding()
             Divider()
             
-
-//            Button {
-//                guard let uid = Auth.auth().currentUser?.uid else {
-//                    return uidText = "ログインしてない"
-//                }
-//                uidText = uid
-//            } label: {
-//                Text("test button")
-//            }
-//
-//            Text(uidText)
-//
-//            TextField(text: $testInputText) {
-//                Text("input Text")
-//            }
-//            .frame(width: UIScreen.main.bounds.width * 0.95)
-//            Button {
-//                Firestore.firestore().collection("users").document(uidText).setData(["testText": testInputText])
-//            } label: {
-//                Text("Save")
-//            }
-            
             // 選択された写真一覧
             ScrollView{
                 LazyVGrid(columns: columns) {
@@ -122,6 +101,7 @@ struct ImageView: View {
             
             // 決定ボタン（カプセル画面へ）
             Button(action: {
+                // 写真をパスにしてデータベースに保存したかった
 //                Firestore.firestore().collection("users").document(uidText).setData(["image1": images[0]])
 //                Firestore.firestore().collection("users").document(uidText).setData(["image2": images[1]])
 //                Firestore.firestore().collection("users").document(uidText).setData(["image3": images[2]])

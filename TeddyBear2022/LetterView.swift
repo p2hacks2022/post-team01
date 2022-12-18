@@ -4,25 +4,19 @@
 //  
 //  Created by テディベア on 2022/12/15
 //  
-//
+// お手紙作成画面
 
 import SwiftUI
 import Firebase
 
 struct LetterView: View {
-    private static let placeholder = "自由に入力してください"
-//    @State private var placeholderText = placeholder
+
     @Binding var editText: String // テキストを入力する
 
     @Environment(\.dismiss) var dismiss
     
-//    init() {
-//            editText = placeholderText
-//        }
-    
     init(editText: Binding<String>) {
             self._editText = editText
-//            self.placeholderText = placeholder
         }
     
     var body: some View {
@@ -52,6 +46,7 @@ struct LetterView: View {
             }
             .padding()
             
+            // お手紙入力
             TextEditor(text: $editText)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .frame(width: 300, height: 200)
@@ -67,11 +62,6 @@ struct LetterView: View {
             
             // 決定ボタン（カプセル画面へ）
             Button(action: {
-//                guard let uid = Auth.auth().currentUser?.uid else {
-//                    return uidText = "ログインしてない"
-//                }
-//                uidText = uid
-//                Firestore.firestore().collection(uidText).document("capsule1").setData(["letter": editText])
                 dismiss()
             }, label: {
                 Text("決定")
@@ -90,9 +80,3 @@ struct LetterView: View {
     }
     
 }
-
-//struct LetterView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        LetterView()
-//    }
-//}

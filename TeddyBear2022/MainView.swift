@@ -4,7 +4,7 @@
 //  
 //  Created by テディベア on 2022/12/16
 //  
-//
+//  スタート画面
 
 import SwiftUI
 import FirebaseAuth
@@ -41,6 +41,7 @@ struct MainView: View {
                         .frame(width: 320, height: 320)
                 }
                 
+                // ログインボタン
                 Button(action: {
                     isShowingSIView.toggle()
                 }, label: {
@@ -56,6 +57,7 @@ struct MainView: View {
                 })
                 .padding()
                 
+                // 新規登録ボタン
                 Button(action: {
                     isShowingSUView.toggle()
                 }, label: {
