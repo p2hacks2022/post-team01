@@ -1,7 +1,32 @@
 @charset "UTF-8";
+
+html *,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
 body {margin: 0;
-    font-family: 'Source Sans Pro', 'メイリオ',
-    'Hiragino Kaku Gothic Pro', sans-serif}
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, th, strong {
+    font-weight: 700;
+}
+
+/* レスポンシブイメージと画像下スペース防止 */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
 
 /* サイト名 */
 .site {
@@ -44,6 +69,9 @@ body {margin: 0;
 .article {
     padding: 40px;
 }
+.article a{
+    color: #a50c63;
+}
 .article img {
     max-width: 100%;
     height: auto;
@@ -69,6 +97,9 @@ body {margin: 0;
 .articleinfo {
     margin-bottom: 20px;
     color: #666666;
+}
+.article mark {
+    background: linear-gradient(transparent 10%, #d859a38f 80%);
 }
 
 /* 関連サイトメニュー */

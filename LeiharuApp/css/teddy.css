@@ -70,7 +70,7 @@ img {
 }
 /* h2 */
 .post-contents h2 {
-    margin: 60px 0 30px 0;
+    margin: 10px 0 30px 0;  /* パンくずリストの下の幅 */
     padding: 1rem 0;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -84,7 +84,7 @@ img {
 }
 /* p mark */
 .post-contents mark {
-    background: linear-gradient(transparent 50%, #ff7cf2bc 50%);
+    background: linear-gradient(transparent 10%, #d859a38f 80%);
 }
 
 @media (min-width: 768px) {
@@ -119,7 +119,7 @@ img {
 .header-nav li a {
     display: block;
     padding: 10px 30px;
-    border-top: 3px solid #8a3c3c;
+    border-top: 3px solid #8f0555;
     background: #efefef;
     color: #000;
     /* font-size: 30px; */
@@ -176,7 +176,7 @@ img {
     }
     .bc-nav li {
         font-size: .75rem;
-        color: #747474;
+        color: #c779a6;  /* パンくずリストの文字 */
     }
     .bc-nav li::after {
         padding: 0 5px;
@@ -227,7 +227,7 @@ img {
 * フッターコンテナ
 */
 .page-footer {
-    background: #000;
+    background: rgb(0, 0, 0);
 }
 .footer-container {
     padding: 60px 4%;
@@ -264,6 +264,20 @@ img {
     }
 }/* PC向けスタイル */
 
+.post-header h1 span {
+    display: block;
+    margin-bottom: 20px;
+    color: #a50c63;
+    font-size: 20px;
+    font-weight: bold;
+}
+.post-header h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
 .photo-caption {
     margin: 30px 0;
 }
@@ -286,7 +300,7 @@ img {
     display: inline-block;
     margin: 0;
     padding: 10px 30px;
-    background: #000;
+    background: rgb(0, 0, 0);
     border-radius: 10px 10px 0 0;
     font-family: 'Croissant One', cursive;
     font-weight: 400;
@@ -311,4 +325,8 @@ img {
 .pr-text p {
     margin: 0;
     line-height: 1.9;
+}
+a {
+    /* text-decoration: none; */
+    color: #c779a6;
 }
