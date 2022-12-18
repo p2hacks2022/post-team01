@@ -47,5 +47,5 @@
 利用したフレームワーク・ライブラリ  
      Firestore
 
-その他開発に使用したツール・サービス
+その他開発に使用したツール・サービス  
      GitHub・Miro・Google Document
