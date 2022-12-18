@@ -13,7 +13,7 @@ import Firebase
 struct MainView: View {
     @State private var isShowingSIView: Bool = false // サインイン画面遷移
     @State private var isShowingSUView: Bool = false // サインアップ画面遷移
-    var logo: UIImage = UIImage(imageLiteralResourceName: "background") // ロゴ
+    var logo: UIImage = UIImage(imageLiteralResourceName: "caplogo") // ロゴ
     @State var emailText = "" // email情報
     
     var body: some View {
@@ -38,7 +38,7 @@ struct MainView: View {
                     Image(uiImage: logo)
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 270, height: 270)
+                        .frame(width: 320, height: 320)
                 }
                 
                 Button(action: {

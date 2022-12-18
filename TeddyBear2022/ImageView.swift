@@ -99,23 +99,23 @@ struct ImageView: View {
 //                Text("Save")
 //            }
             
-//            // 選択された写真一覧
-//            ScrollView{
-//                LazyVGrid(columns: columns) {
-//                    ForEach(images, id: \.self) { image in
-//                        Image(uiImage: image)
-//                            .resizable()
-//                            .scaledToFill()
-//                            .frame(width: 95, height: 95)
-//                            .clipShape(Circle())
-//                            .padding(.all, 5)
-//                            .background(Color("Color").opacity(0.6))
-//                            .clipShape(Circle())
-//                            .shadow(color: Color("Color1").opacity(0.3), radius: 5, x: 5, y: 5)
-//                            .shadow(color: Color.white, radius: 5, x: -5, y: -5)
-//                    }
-//                }
-//            }
+            // 選択された写真一覧
+            ScrollView{
+                LazyVGrid(columns: columns) {
+                    ForEach(images, id: \.self) { image in
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 95, height: 95)
+                            .clipShape(Circle())
+                            .padding(.all, 5)
+                            .background(Color("Color").opacity(0.6))
+                            .clipShape(Circle())
+                            .shadow(color: Color("Color1").opacity(0.3), radius: 5, x: 5, y: 5)
+                            .shadow(color: Color.white, radius: 5, x: -5, y: -5)
+                    }
+                }
+            }
             Divider()
             Spacer()
             Spacer()
