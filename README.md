@@ -24,8 +24,8 @@
      今回のハッカソンに限らず使っていけそうなWebサイトができたとこ
 
 スクリーンショット(任意)
-![Home](img width="271" src="https://user-images.githubusercontent.com/95894077/208271299-a337be5a-3a59-4bff-b3c0-83a79478c0ef.png")
-![pics](img width="271" src="https://user-images.githubusercontent.com/95894077/208271283-02da4289-bbeb-45c6-b0f3-3760dfb78ce8.png")
+![Home](https://user-images.githubusercontent.com/95894077/208271299-a337be5a-3a59-4bff-b3c0-83a79478c0ef.png)
+![pics](https://user-images.githubusercontent.com/95894077/208271283-02da4289-bbeb-45c6-b0f3-3760dfb78ce8.png)
 
 
 
