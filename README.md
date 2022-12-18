@@ -2,9 +2,11 @@
 
 プロダクト名  
 ... デジタルタイムカプセル
+    紹介Webサイト
 
 コンセプト  
-...  大人になっても今の出来事や感情を忘れたくない！
+...  未来の自分に何かを残したい！
+     大人になっても今の出来事や感情を忘れたくない！
      今仲が良い人と卒業しても連絡をとっていたい！
 
 対象ユーザ  
@@ -18,11 +20,12 @@
      5.指定した日時にカプセルが届くのを待つ
 
 推しポイント  
-...  タイムカプセルがデジタルになることで動画が入れられる
+...  タイムカプセルがデジタルになることで動画が入れられるとこ
+     今回のハッカソンに限らず使っていけそうなWebサイトができたとこ
 
 スクリーンショット(任意)
-![Home](https://user-images.githubusercontent.com/95894077/208271299-a337be5a-3a59-4bff-b3c0-83a79478c0ef.png)
-![pics](https://user-images.githubusercontent.com/95894077/208271283-02da4289-bbeb-45c6-b0f3-3760dfb78ce8.png)
+![Home](img width="271" src="https://user-images.githubusercontent.com/95894077/208271299-a337be5a-3a59-4bff-b3c0-83a79478c0ef.png")
+![pics](img width="271" src="https://user-images.githubusercontent.com/95894077/208271283-02da4289-bbeb-45c6-b0f3-3760dfb78ce8.png")
 
 
 
@@ -33,7 +36,8 @@
      開発：廣木・森
 
 開発における工夫した点  
-...  
+...  開発中に方向性がずれないようにコンセプト固めをしっかり時間をかけて行った点。
+     コードにコメントをつけた点。
 
 ## 開発技術 
 
@@ -41,7 +45,7 @@
 ...  Swift・HTML・CSS
 
 利用したフレームワーク・ライブラリ  
-...  
+...  Firestore
 
 その他開発に使用したツール・サービス
 ...  GitHub・Miro・Google Document
